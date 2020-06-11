@@ -20,6 +20,10 @@ def play_game():
 
 def handle_turn():
     position = input("choose a position from 1-9: ") 
+    position = int(position) - 1
+
+    board[position] = "x"
+    display_board()
 
 
 play_game()    
